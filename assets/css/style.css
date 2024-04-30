@@ -1,0 +1,107 @@
+/* Import google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root{
+    --primary-green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+
+/* Common CSS */
+*, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: var(--off-black);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+/* Social Links Section */
+.rela-main-social-section{
+    background-color: var(--grey);
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.rela-main-social-section .rela-imagebox .rela-image img{
+    border-radius: 50%;
+    width: 80px;
+    object-fit: cover;
+}
+
+.rela-main-social-section .rela-imagebox .rela-user-content{
+    padding-top: 20px;
+}
+
+.rela-main-social-section .rela-imagebox .rela-user-content .rela-user-title{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.rela-main-social-section .rela-user-content p.rela-user-location {
+    color: var(--primary-green);
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.rela-main-social-section .rela-user-quote {
+    padding: 25px 0 10px;
+    color: #f3f3f3;
+    font-size: 16px;
+}
+
+.rela-main-social-section .rela-main-social-links ul li {
+    margin: 15px 0;
+}
+
+.rela-main-social-section .rela-main-social-links ul li a {
+    display: block;
+    padding: 18px 0;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    background: var(--dark-grey);
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    --webkit-animation: all 0.5s ease-in-out;
+}
+
+.rela-main-social-section .rela-main-social-links ul li a:hover {
+    background: var(--primary-green);
+    color: var(--off-black);
+}
+
+@media only screen and (max-width:767px) and (min-width: 375px){
+    .rela-main-social-section{
+        width: 100%;
+        margin: 0 20px;
+        padding: 20px;
+    }
+}
